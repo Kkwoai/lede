@@ -13,6 +13,10 @@
 		led-upgrade = &led_power;
 		label-mac-device = &ethernet;
 	};
+	memory@0 {
+                device_type = "memory";
+                reg = <0x0 0x80000000>;
+        };
 
 	leds {
 		compatible = "gpio-leds";
